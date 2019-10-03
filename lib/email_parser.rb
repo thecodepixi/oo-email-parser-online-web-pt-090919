@@ -12,14 +12,7 @@ class EmailAddressParser
   end 
   
   def parse 
-   parsed = @emails.split(/(\s|[,])/)
-   
-   parsed.each do |x|
-     if x == " " || x == "," || x == ""
-       parsed.delete(x)
-     end 
-   end 
-   parsed 
+    @emails.split()
   end 
-  
+
 end 
